@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import HomeContainer from './container/HomeContainer'
+import HeaderContainer from "./container/HeaderContainer";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderContainer/>
+      <HomeContainer/>
+    </>
   );
 }
 
 export default App;
+
+
+// folder structure for that 
+
+// components 
+// containers
+// service
+   // actions 
+   // reducers
+   // constants - constant action and reducer file ko btayega ki, jab action se data reducer me jayega to kon sa data kon se function me jana chahiye vo constant btayega 
